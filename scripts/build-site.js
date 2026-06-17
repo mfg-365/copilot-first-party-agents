@@ -129,8 +129,7 @@ function cardForTemplate(template, depth = 0) {
 function homePage() {
   const stats = [
     ["25", "First-party agents"],
-    [String(site.templates.length), "Template pages"],
-    ["Scheduled", "Source monitoring"]
+    [String(site.templates.length), "Template pages"]
   ];
   const featuredAgents = site.agents.slice(0, 12);
 
@@ -157,12 +156,6 @@ function homePage() {
   </section>
   <main>
     <div class="wrap">
-      <section class="section">
-        <div class="callout">
-          <strong>About this site</strong>
-          <p>${escapeHtml(site.sourceNote)} Roadmap coverage is intentionally conservative because agent-specific roadmap details are not always published.</p>
-        </div>
-      </section>
       <section class="section" id="agents">
         <div class="section-head">
           <div>
