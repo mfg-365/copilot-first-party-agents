@@ -520,32 +520,28 @@ main {
 }
 
 .template-hero {
-  grid-template-columns: minmax(0, 1fr) 172px;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.3fr);
 }
 
-.template-mark {
+.compact-side {
+  align-content: stretch;
+}
+
+.template-mini-mark {
   display: grid;
-  min-height: 172px;
+  width: 72px;
+  height: 72px;
   place-items: center;
   border: 1px solid var(--cp-border);
   border-radius: 16px;
   background:
     radial-gradient(circle at 30% 24%, var(--cp-sheen), var(--cp-accent-soft) 30%),
     linear-gradient(135deg, var(--cp-accent-soft), var(--cp-surface-soft));
-}
-
-.template-mark span {
-  display: grid;
-  width: 86px;
-  height: 86px;
-  place-items: center;
-  border: 1px solid var(--cp-border);
-  border-radius: 16px;
-  background: var(--cp-surface);
   color: var(--cp-accent);
-  font-size: 1.7rem;
+  font-size: 1.25rem;
   font-weight: 800;
   letter-spacing: -0.08em;
+  flex: 0 0 auto;
 }
 
 .steps-list {

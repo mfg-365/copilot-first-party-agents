@@ -185,6 +185,13 @@ function homePage() {
 }
 
 function agentPage(agent) {
+  const roadmapCard = agent.roadmap.length > 0
+    ? `<article class="detail-card">
+          <p class="eyebrow">Roadmap</p>
+          <h2>Signals</h2>
+          ${linkList(agent.roadmap)}
+        </article>`
+    : "";
   const body = `<main>
     <div class="wrap detail-wrap">
       <section class="detail-hero">
@@ -222,11 +229,7 @@ function agentPage(agent) {
           <h2>${escapeHtml(agent.status)}</h2>
           ${pills(agent.surfaces)}
         </article>
-        <article class="detail-card">
-          <p class="eyebrow">Roadmap</p>
-          <h2>Signals</h2>
-          ${linkList(agent.roadmap, "No agent-specific roadmap item confirmed yet.")}
-        </article>
+        ${roadmapCard}
         ${agent.caveat ? `<article class="detail-card span-2 caveat-card"><p class="eyebrow">Research note</p><h2>Caveat</h2><p>${escapeHtml(agent.caveat)}</p></article>` : ""}
         <article class="detail-card source-card">
           <p class="eyebrow">Documentation</p>
@@ -289,20 +292,37 @@ function templatesIndex() {
 }
 
 function templatePage(template) {
+  const initials = template.name.split(/\s+/).map((part) => part[0]).join("").slice(0, 3);
+  const roadmapCard = template.roadmap.length > 0
+    ? `<article class="detail-card">
+          <p class="eyebrow">Roadmap</p>
+          <h2>Signals</h2>
+          ${linkList(template.roadmap)}
+        </article>`
+    : "";
   const body = `<main>
     <div class="wrap detail-wrap">
       <section class="detail-hero template-hero">
         <div class="detail-hero-main">
-          <p class="eyebrow">${escapeHtml(template.type)}</p>
-          <h1>${escapeHtml(template.name)}</h1>
+          <div class="page-title">
+            <span class="template-mini-mark" aria-hidden="true">${escapeHtml(initials)}</span>
+            <div>
+              <p class="eyebrow">${escapeHtml(template.type)}</p>
+              <h1>${escapeHtml(template.name)}</h1>
+            </div>
+          </div>
           <p class="lede">${escapeHtml(template.summary)}</p>
           <div class="hero-actions">
             <a class="button primary" href="../index.html">All templates</a>
             ${template.docs[0] ? `<a class="button" href="${escapeHtml(template.docs[0].url)}">Learn article</a>` : ""}
           </div>
         </div>
-        <div class="template-mark" aria-hidden="true">
-          <span>${escapeHtml(template.name.split(/\s+/).map((part) => part[0]).join("").slice(0, 3))}</span>
+        <div class="detail-hero-side compact-side">
+          <div class="detail-stats">
+            <div class="detail-stat"><span>Type</span><strong>Template</strong></div>
+            <div class="detail-stat"><span>Flow</span><strong>4 steps</strong></div>
+            <div class="detail-stat"><span>Source</span><strong>Learn</strong></div>
+          </div>
         </div>
       </section>
       <div class="detail-grid">
@@ -321,11 +341,7 @@ function templatePage(template) {
             <li><strong>Create</strong><span>Test, publish, and share the agent.</span></li>
           </ol>
         </article>
-        <article class="detail-card">
-          <p class="eyebrow">Roadmap</p>
-          <h2>Signals</h2>
-          ${linkList(template.roadmap, "No template-specific roadmap item confirmed yet.")}
-        </article>
+        ${roadmapCard}
         <article class="detail-card source-card span-2">
           <p class="eyebrow">Documentation</p>
           <h2>Template source</h2>
