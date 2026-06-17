@@ -271,7 +271,7 @@ h3 {
 }
 
 main {
-  padding: 40px 0 64px;
+  padding: 32px 0 64px;
 }
 
 .section {
@@ -388,6 +388,190 @@ main {
   gap: 24px;
 }
 
+.detail-wrap {
+  display: grid;
+  gap: 18px;
+  width: min(1120px, calc(100% - 32px));
+}
+
+.detail-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 0.3fr);
+  gap: 18px;
+  align-items: stretch;
+  border: 1px solid var(--cp-border);
+  border-radius: 16px;
+  background:
+    radial-gradient(circle at 82% 22%, var(--cp-highlight), var(--cp-surface) 22rem),
+    linear-gradient(135deg, var(--cp-surface), var(--cp-surface-soft));
+  box-shadow: 0 0 2px var(--cp-border), 0 1px 2px var(--cp-border);
+  overflow: hidden;
+  padding: 20px;
+  position: relative;
+}
+
+.detail-hero::before,
+.detail-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 5px;
+  background: var(--cp-accent);
+}
+
+.detail-hero-main {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.detail-hero-side {
+  display: grid;
+  align-content: center;
+  gap: 12px;
+  border: 1px solid var(--cp-border);
+  border-radius: 16px;
+  background:
+    radial-gradient(circle at 20% 18%, var(--cp-sheen), var(--cp-accent-soft) 34%),
+    var(--cp-panel);
+  padding: 16px;
+}
+
+.detail-hero-side > .agent-icon {
+  width: 84px;
+  height: 84px;
+  justify-self: start;
+}
+
+.detail-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.detail-stat {
+  display: grid;
+  gap: 4px;
+  flex: 1 1 120px;
+  border: 1px solid var(--cp-border);
+  border-radius: 0.625rem;
+  background: var(--cp-panel-strong);
+  padding: 10px;
+}
+
+.detail-stat span {
+  color: var(--cp-text-soft);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.detail-stat strong {
+  color: var(--cp-text);
+  font-size: 1rem;
+}
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.detail-card {
+  display: grid;
+  align-content: start;
+  gap: 12px;
+  border: 1px solid var(--cp-border);
+  border-radius: 16px;
+  background: var(--cp-surface);
+  box-shadow: 0 0 2px var(--cp-border), 0 1px 2px var(--cp-border);
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.detail-card::before {
+  opacity: 0.45;
+}
+
+.detail-card.span-2 {
+  grid-column: span 2;
+}
+
+.detail-card h2 {
+  font-size: clamp(1.3rem, 2vw, 2rem);
+}
+
+.detail-card p {
+  margin: 0;
+  color: var(--cp-text-muted);
+}
+
+.source-card {
+  background:
+    linear-gradient(135deg, var(--cp-surface), var(--cp-surface-soft));
+}
+
+.caveat-card {
+  border-color: var(--cp-border-strong);
+  background: var(--cp-accent-soft);
+}
+
+.template-hero {
+  grid-template-columns: minmax(0, 1fr) 172px;
+}
+
+.template-mark {
+  display: grid;
+  min-height: 172px;
+  place-items: center;
+  border: 1px solid var(--cp-border);
+  border-radius: 16px;
+  background:
+    radial-gradient(circle at 30% 24%, var(--cp-sheen), var(--cp-accent-soft) 30%),
+    linear-gradient(135deg, var(--cp-accent-soft), var(--cp-surface-soft));
+}
+
+.template-mark span {
+  display: grid;
+  width: 86px;
+  height: 86px;
+  place-items: center;
+  border: 1px solid var(--cp-border);
+  border-radius: 16px;
+  background: var(--cp-surface);
+  color: var(--cp-accent);
+  font-size: 1.7rem;
+  font-weight: 800;
+  letter-spacing: -0.08em;
+}
+
+.steps-list {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: var(--cp-text-muted);
+}
+
+.steps-list li {
+  display: grid;
+  grid-template-columns: 82px 1fr;
+  gap: 10px;
+  align-items: start;
+  border: 1px solid var(--cp-border);
+  border-radius: 0.625rem;
+  background: var(--cp-surface-soft);
+  padding: 10px;
+}
+
+.steps-list strong {
+  color: var(--cp-accent);
+}
+
 .prose {
   display: grid;
   gap: 20px;
@@ -449,8 +633,14 @@ main {
 @media (max-width: 820px) {
   .hero-grid,
   .page-grid,
+  .detail-hero,
+  .detail-grid,
   .template-process {
     grid-template-columns: 1fr;
+  }
+
+  .detail-card.span-2 {
+    grid-column: auto;
   }
 
   .nav {

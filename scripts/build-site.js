@@ -45,6 +45,10 @@ function linkList(items, emptyText = "No public source found yet.") {
     .join("")}</ul>`;
 }
 
+function countLabel(count, singular, plural = `${singular}s`) {
+  return `${count} ${count === 1 ? singular : plural}`;
+}
+
 function pills(items, extraClass = "") {
   return `<div class="pills">${items.map((item) => `<span class="pill ${extraClass}">${escapeHtml(item)}</span>`).join("")}</div>`;
 }
@@ -87,7 +91,6 @@ function layout({ title, description, body, depth = 0 }) {
           <div class="nav-links">
             <a href="${prefix}/index.html#agents">Agents</a>
             <a href="${prefix}/templates/index.html">Agent Builder templates</a>
-            <a href="${prefix}/sources.html">Sources & refresh</a>
           </div>
         </nav>
       </div>
@@ -183,34 +186,59 @@ function homePage() {
 
 function agentPage(agent) {
   const body = `<main>
-    <div class="wrap page-grid">
-      <article class="prose">
-        <div class="page-title">
-          ${iconMarkup(agent, "../..")}
-          <div>
-            <p class="eyebrow">First-party Copilot agent</p>
-            <h1>${escapeHtml(agent.name)}</h1>
+    <div class="wrap detail-wrap">
+      <section class="detail-hero">
+        <div class="detail-hero-main">
+          <div class="page-title">
+            ${iconMarkup(agent, "../..")}
+            <div>
+              <p class="eyebrow">First-party Copilot agent</p>
+              <h1>${escapeHtml(agent.name)}</h1>
+            </div>
+          </div>
+          <p class="lede">${escapeHtml(agent.summary)}</p>
+          <div class="hero-actions">
+            <a class="button primary" href="../../index.html#agents">All agents</a>
+            ${agent.docs[0] ? `<a class="button" href="${escapeHtml(agent.docs[0].url)}">Primary doc</a>` : ""}
           </div>
         </div>
-        ${pills([agent.status], "status")}
-        ${pills(agent.surfaces)}
-        <p class="lede">${escapeHtml(agent.summary)}</p>
-        <section class="section">
-          <h2>What it does</h2>
+        <div class="detail-hero-side">
+          ${iconMarkup(agent, "../..")}
+          <div class="detail-stats">
+            <div class="detail-stat"><span>Status</span><strong>${escapeHtml(agent.status)}</strong></div>
+            <div class="detail-stat"><span>Surfaces</span><strong>${escapeHtml(countLabel(agent.surfaces.length, "surface"))}</strong></div>
+            <div class="detail-stat"><span>Sources</span><strong>${escapeHtml(countLabel(agent.docs.length + agent.blogs.length, "link"))}</strong></div>
+          </div>
+        </div>
+      </section>
+      <div class="detail-grid">
+        <article class="detail-card span-2">
+          <p class="eyebrow">What it does</p>
+          <h2>Agent profile</h2>
           <p>${escapeHtml(agent.details)}</p>
-        </section>
-        ${agent.caveat ? `<section class="callout"><strong>Research caveat</strong><p>${escapeHtml(agent.caveat)}</p></section>` : ""}
-        <section class="section">
-          <h2>Roadmap signals</h2>
-          ${linkList(agent.roadmap, "No agent-specific roadmap item was confirmed from public sources. Monitor the Microsoft 365 Roadmap and release notes for changes.")}
-        </section>
-      </article>
-      <aside class="source-panel">
-        <h3>Documentation</h3>
-        ${linkList(agent.docs)}
-        <h3>Microsoft blogs</h3>
-        ${linkList(agent.blogs, "No dedicated Microsoft blog post found yet.")}
-      </aside>
+        </article>
+        <article class="detail-card">
+          <p class="eyebrow">Availability</p>
+          <h2>${escapeHtml(agent.status)}</h2>
+          ${pills(agent.surfaces)}
+        </article>
+        <article class="detail-card">
+          <p class="eyebrow">Roadmap</p>
+          <h2>Signals</h2>
+          ${linkList(agent.roadmap, "No agent-specific roadmap item confirmed yet.")}
+        </article>
+        ${agent.caveat ? `<article class="detail-card span-2 caveat-card"><p class="eyebrow">Research note</p><h2>Caveat</h2><p>${escapeHtml(agent.caveat)}</p></article>` : ""}
+        <article class="detail-card source-card">
+          <p class="eyebrow">Documentation</p>
+          <h2>Learn & Support</h2>
+          ${linkList(agent.docs)}
+        </article>
+        <article class="detail-card source-card">
+          <p class="eyebrow">Blogs</p>
+          <h2>Microsoft posts</h2>
+          ${linkList(agent.blogs, "No dedicated Microsoft blog post found yet.")}
+        </article>
+      </div>
     </div>
   </main>`;
   writeFile(path.join(root, "agents", slugify(agent.name), "index.html"), layout({
@@ -262,26 +290,48 @@ function templatesIndex() {
 
 function templatePage(template) {
   const body = `<main>
-    <div class="wrap page-grid">
-      <article class="prose">
-        <div>
+    <div class="wrap detail-wrap">
+      <section class="detail-hero template-hero">
+        <div class="detail-hero-main">
           <p class="eyebrow">${escapeHtml(template.type)}</p>
           <h1>${escapeHtml(template.name)}</h1>
+          <p class="lede">${escapeHtml(template.summary)}</p>
+          <div class="hero-actions">
+            <a class="button primary" href="../index.html">All templates</a>
+            ${template.docs[0] ? `<a class="button" href="${escapeHtml(template.docs[0].url)}">Learn article</a>` : ""}
+          </div>
         </div>
-        <p class="lede">${escapeHtml(template.summary)}</p>
-        <section class="section">
-          <h2>Details</h2>
+        <div class="template-mark" aria-hidden="true">
+          <span>${escapeHtml(template.name.split(/\s+/).map((part) => part[0]).join("").slice(0, 3))}</span>
+        </div>
+      </section>
+      <div class="detail-grid">
+        <article class="detail-card span-2">
+          <p class="eyebrow">Template blueprint</p>
+          <h2>Scenario fit</h2>
           <p>${escapeHtml(template.details)}</p>
-        </section>
-        <section class="section">
-          <h2>Roadmap signals</h2>
-          ${linkList(template.roadmap, "No template-specific roadmap item was confirmed from public sources.")}
-        </section>
-      </article>
-      <aside class="source-panel">
-        <h3>Documentation</h3>
-        ${linkList(template.docs)}
-      </aside>
+        </article>
+        <article class="detail-card">
+          <p class="eyebrow">Build flow</p>
+          <h2>From template to agent</h2>
+          <ol class="steps-list">
+            <li><strong>Select</strong><span>Choose the template in Agent Builder.</span></li>
+            <li><strong>Describe</strong><span>Tell Copilot the scenario and audience.</span></li>
+            <li><strong>Ground</strong><span>Add knowledge sources and capabilities.</span></li>
+            <li><strong>Create</strong><span>Test, publish, and share the agent.</span></li>
+          </ol>
+        </article>
+        <article class="detail-card">
+          <p class="eyebrow">Roadmap</p>
+          <h2>Signals</h2>
+          ${linkList(template.roadmap, "No template-specific roadmap item confirmed yet.")}
+        </article>
+        <article class="detail-card source-card span-2">
+          <p class="eyebrow">Documentation</p>
+          <h2>Template source</h2>
+          ${linkList(template.docs)}
+        </article>
+      </div>
     </div>
   </main>`;
   writeFile(path.join(root, "templates", slugify(template.name), "index.html"), layout({
