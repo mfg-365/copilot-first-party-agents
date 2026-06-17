@@ -49,6 +49,15 @@ function pills(items, extraClass = "") {
   return `<div class="pills">${items.map((item) => `<span class="pill ${extraClass}">${escapeHtml(item)}</span>`).join("")}</div>`;
 }
 
+function iconMarkup(item, prefix = ".") {
+  const label = item.iconText || item.name.split(/\s+/).map((part) => part[0]).join("").slice(0, 2);
+  if (item.icon) {
+    return `<span class="agent-icon"><img src="${prefix}/${escapeHtml(item.icon)}" alt="" loading="lazy"></span>`;
+  }
+
+  return `<span class="agent-icon text-icon">${escapeHtml(label)}</span>`;
+}
+
 function layout({ title, description, body, depth = 0 }) {
   const prefix = relPath(depth);
   return `<!doctype html>
@@ -66,6 +75,7 @@ function layout({ title, description, body, depth = 0 }) {
       document.documentElement.setAttribute("data-theme", theme);
     })();
   </script>
+  <link rel="icon" href="${prefix}/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="${prefix}/styles.css">
 </head>
 <body>
@@ -95,8 +105,11 @@ function layout({ title, description, body, depth = 0 }) {
 
 function cardForAgent(agent) {
   const slug = slugify(agent.name);
-  return `<article class="card">
-    <div class="pills"><span class="pill status">${escapeHtml(agent.status)}</span></div>
+  return `<article class="card agent-card">
+    <div class="card-top">
+      ${iconMarkup(agent)}
+      <span class="pill status">${escapeHtml(agent.status)}</span>
+    </div>
     <h3><a href="agents/${slug}/index.html">${escapeHtml(agent.name)}</a></h3>
     <p>${escapeHtml(agent.summary)}</p>
     ${pills(agent.surfaces)}
@@ -119,8 +132,9 @@ function homePage() {
     [String(site.templates.length), "Template pages"],
     ["Scheduled", "Source monitoring"]
   ];
+  const featuredAgents = site.agents.slice(0, 12);
 
-  const body = `<section class="hero">
+  const body = `<section class="home-hero">
     <div class="wrap hero-grid">
       <div>
         <p class="eyebrow">Microsoft 365 Copilot</p>
@@ -131,8 +145,10 @@ function homePage() {
           <a class="button" href="templates/index.html">View templates</a>
         </div>
       </div>
-      <aside class="orb-card" aria-label="Site summary">
-        <div class="orb" aria-hidden="true"></div>
+      <aside class="hero-panel" aria-label="Site summary">
+        <div class="hero-icon-grid" aria-hidden="true">
+          ${featuredAgents.map((agent) => iconMarkup(agent)).join("")}
+        </div>
         <div class="stats">
           ${stats.map(([number, label]) => `<div class="stat"><strong>${number}</strong><span>${label}</span></div>`).join("")}
         </div>
@@ -160,11 +176,11 @@ function homePage() {
         <div class="section-head">
           <div>
             <p class="eyebrow">Agent Builder</p>
-            <h2>Templates and tuned-agent starters</h2>
+            <h2>Agent Builder templates</h2>
           </div>
           <a class="button" href="templates/index.html">Open templates</a>
         </div>
-        <div class="cards">${site.templates.slice(0, 3).map((template) => cardForTemplate(template)).join("")}</div>
+        <div class="cards">${site.templates.slice(0, 6).map((template) => cardForTemplate(template)).join("")}</div>
       </section>
     </div>
   </main>`;
@@ -176,9 +192,12 @@ function agentPage(agent) {
   const body = `<main>
     <div class="wrap page-grid">
       <article class="prose">
-        <div>
-          <p class="eyebrow">First-party Copilot agent</p>
-          <h1>${escapeHtml(agent.name)}</h1>
+        <div class="page-title">
+          ${iconMarkup(agent, "../..")}
+          <div>
+            <p class="eyebrow">First-party Copilot agent</p>
+            <h1>${escapeHtml(agent.name)}</h1>
+          </div>
         </div>
         ${pills([agent.status], "status")}
         ${pills(agent.surfaces)}
@@ -216,6 +235,14 @@ function templatesIndex() {
         <p class="eyebrow">Microsoft 365 Copilot</p>
         <h1>Agent Builder templates</h1>
         <p class="lede">${escapeHtml(site.agentBuilder.summary)}</p>
+      </section>
+      <section class="section">
+        <div class="template-process">
+          <div><strong>1</strong><span>Select a template</span></div>
+          <div><strong>2</strong><span>Describe your scenario</span></div>
+          <div><strong>3</strong><span>Add knowledge and capabilities</span></div>
+          <div><strong>4</strong><span>Create and chat</span></div>
+        </div>
       </section>
       <section class="section callout">
         <strong>Roadmap note</strong>

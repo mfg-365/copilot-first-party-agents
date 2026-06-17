@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Idea Coach | Microsoft 365 Copilot First-Party Agents</title>
+  <meta name="description" content="Generates, expands, and structures ideas into actionable directions.">
+  <script>
+    (() => {
+      const param = new URLSearchParams(window.location.search).get("scoutTheme");
+      const theme =
+        param || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+  <div class="shell">
+    <header class="hero">
+      <div class="wrap">
+        <nav class="nav" aria-label="Main navigation">
+          <a class="brand" href="../../index.html"><span class="logo">A</span><span>Microsoft 365 Copilot First-Party Agents</span></a>
+          <div class="nav-links">
+            <a href="../../index.html#agents">Agents</a>
+            <a href="../../templates/index.html">Agent Builder templates</a>
+            <a href="../../sources.html">Sources & refresh</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+    <div class="wrap page-grid">
+      <article class="prose">
+        <div>
+          <p class="eyebrow">Agent Builder template</p>
+          <h1>Idea Coach</h1>
+        </div>
+        <p class="lede">Generates, expands, and structures ideas into actionable directions.</p>
+        <section class="section">
+          <h2>Details</h2>
+          <p>Supports brainstorming, concept refinement, scenario planning, and turning rough ideas into next-step plans.</p>
+        </section>
+        <section class="section">
+          <h2>Roadmap signals</h2>
+          <p class="muted">No template-specific roadmap item was confirmed from public sources.</p>
+        </section>
+      </article>
+      <aside class="source-panel">
+        <h3>Documentation</h3>
+        <ul class="source-list"><li><a href="https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-idea-coach">Idea Coach template</a></li></ul>
+      </aside>
+    </div>
+  </main>
+    <footer class="footer">
+      <div class="wrap">
+        <p>Last updated June 16, 2026. Agent inventory seeded from the provided Microsoft 365 Copilot first-party agents slide, availability last updated June 2, 2026. Public links were researched on June 16, 2026.</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

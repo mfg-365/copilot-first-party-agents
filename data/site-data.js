@@ -318,67 +318,185 @@ const agents = [
   }
 ];
 
+for (const agent of agents) {
+  const slug = agent.name
+    .toLowerCase()
+    .replace(/&/g, "and")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
+  agent.icon = `assets/agent-icons/${slug}.png`;
+}
+
+Object.assign(agents.find((agent) => agent.name === "M365 Admin Agent"), {
+  iconText: "A",
+  icon: ""
+});
+Object.assign(agents.find((agent) => agent.name === "Writing Coach"), {
+  iconText: "Wc",
+  icon: ""
+});
+Object.assign(agents.find((agent) => agent.name === "Workforce Insights Agent"), {
+  iconText: "WI",
+  icon: ""
+});
+
 const templates = [
   {
-    name: "Agent Builder templates",
-    type: "No-code Agent Builder",
-    summary: "Templates in Agent Builder give users a fast starting point for declarative agents in Microsoft 365 Copilot.",
-    details: "Public documentation explains how to start from templates but does not enumerate the full in-product template catalog. The site tracks this as a monitored gap.",
-    docs: [
-      { title: "Templates for agents for Microsoft 365 Copilot", url: "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-templates-overview" },
-      { title: "Agent Builder in Microsoft 365 Copilot", url: "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-builder" }
-    ],
+    name: "AI Learning Advisor",
+    summary: "Teaches, troubleshoots, and guides users across Microsoft AI and low-code tools.",
+    details: "Builds personalized learning plans, recommends whether to use Agent Builder, Copilot Studio, Power Apps, Power Automate, or AI Builder, and explains concepts in a friendly instructional tone.",
+    docSlug: "agent-template-ai-learning-advisor",
     roadmap: []
   },
   {
-    name: "Document Writing",
-    type: "Copilot Tuning template",
-    summary: "Creates long-form documents using organizational examples and style patterns.",
-    details: "A pro-level tuned-agent template for document generation scenarios, separate from no-code Agent Builder templates.",
-    docs: [{ title: "Document Writing agent template", url: "https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-tuning-document-writing-template" }],
+    name: "Career Coach",
+    summary: "Provides personalized career guidance, skill-gap analysis, and action plans.",
+    details: "Helps users map career goals, identify skills to develop, find learning opportunities, prepare transitions, and improve performance.",
+    docSlug: "agent-template-career-coach",
     roadmap: []
   },
   {
-    name: "Document Validation",
-    type: "Copilot Tuning template",
-    summary: "Checks documents against requirements, source material, or expected structure.",
-    details: "A tuned-agent template for validation workflows that need consistent review patterns.",
-    docs: [{ title: "Document Validation agent template", url: "https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-tuning-document-validation-template" }],
+    name: "Corporate Communications Crafter",
+    summary: "Drafts internal communications aligned to company tone and audience needs.",
+    details: "Helps communications teams create announcements, updates, and messaging that stay consistent with organizational standards.",
+    docSlug: "agent-template-corporate-communications",
     roadmap: []
   },
   {
-    name: "Expert Answers",
-    type: "Copilot Tuning template",
-    summary: "Answers expert questions using domain-specific examples and knowledge.",
-    details: "A tuned-agent template for expert Q&A scenarios that require organization-specific expertise.",
-    docs: [{ title: "Expert Answers agent template", url: "https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-tuning-expert-answers-template" }],
+    name: "Customer Insight Assistant",
+    summary: "Builds customer profiles with industry, priorities, leadership, competitors, and trends.",
+    details: "Helps account and customer-facing teams understand customers, initiatives, regional footprint, feedback, and support opportunities.",
+    docSlug: "agent-template-customer-insight",
     roadmap: []
   },
   {
-    name: "Optimization",
-    type: "Copilot Tuning template",
-    summary: "Optimizes plans, outputs, or recommendations against business criteria.",
-    details: "A tuned-agent template for improving outputs according to scenario-specific goals.",
-    docs: [{ title: "Optimization agent template", url: "https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-tuning-optimization-template" }],
+    name: "Executive Briefing Agent",
+    summary: "Prepares concise executive briefings from business and customer context.",
+    details: "Creates leadership-ready summaries that combine relevant context, priorities, risks, and recommended talking points.",
+    docSlug: "agent-template-executive-briefing",
     roadmap: []
   },
   {
-    name: "Style Editing",
-    type: "Copilot Tuning template",
-    summary: "Edits content to match a preferred voice, tone, or house style.",
-    details: "A tuned-agent template for style transformation and editing based on examples.",
-    docs: [{ title: "Style Editing agent template", url: "https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-tuning-style-editing-template" }],
+    name: "Idea Coach",
+    summary: "Generates, expands, and structures ideas into actionable directions.",
+    details: "Supports brainstorming, concept refinement, scenario planning, and turning rough ideas into next-step plans.",
+    docSlug: "agent-template-idea-coach",
     roadmap: []
   },
   {
-    name: "Document Summary",
-    type: "Copilot Tuning template",
-    summary: "Summarizes documents into consistent, scenario-specific formats.",
-    details: "A tuned-agent template for summarization workflows that benefit from repeatable outputs.",
-    docs: [{ title: "Document Summary agent template", url: "https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-tuning-document-summary-template" }],
+    name: "Interview Question Assistant",
+    summary: "Creates interview questions tailored to roles, skills, and evaluation goals.",
+    details: "Helps hiring teams prepare structured questions and prompts for role-specific interviews.",
+    docSlug: "agent-template-interview-questions",
+    roadmap: []
+  },
+  {
+    name: "Learning Coach",
+    summary: "Creates guided learning support for topics, skills, and study plans.",
+    details: "Helps users learn complex topics by breaking them into clear explanations, practice activities, and study guidance.",
+    docSlug: "agent-template-learning-coach",
+    roadmap: []
+  },
+  {
+    name: "Meeting Coach",
+    summary: "Helps users prepare for meetings and improve meeting effectiveness.",
+    details: "Supports agenda preparation, talking points, follow-up planning, and coaching for productive meetings.",
+    docSlug: "agent-template-meeting-coach",
+    roadmap: []
+  },
+  {
+    name: "My Company Policy",
+    summary: "Answers employee policy questions using organizational policy sources.",
+    details: "Gives employees a guided policy assistant that can point to company rules, procedures, and next steps.",
+    docSlug: "agent-template-my-company-policy",
+    roadmap: []
+  },
+  {
+    name: "Personal News Digest",
+    summary: "Creates a personalized digest of relevant news and updates.",
+    details: "Helps users stay current by summarizing news, trends, or updates around selected topics and roles.",
+    docSlug: "agent-template-personal-news-digest",
+    roadmap: []
+  },
+  {
+    name: "Plan My Day",
+    summary: "Turns priorities, meetings, and tasks into a practical day plan.",
+    details: "Helps users organize work, prioritize tasks, and plan focused time around the day ahead.",
+    docSlug: "agent-template-plan-my-day",
+    roadmap: []
+  },
+  {
+    name: "Project Delta Digest",
+    summary: "Summarizes project context, progress, risks, and actions.",
+    details: "Creates project-oriented digests that help teams understand what changed, what matters, and what needs attention.",
+    docSlug: "agent-template-project-delta-digest",
+    roadmap: []
+  },
+  {
+    name: "Prompt Coach",
+    summary: "Coaches users to write more effective prompts for Copilot and agents.",
+    details: "Helps users clarify intent, add context, choose format, and iterate prompts for better outcomes.",
+    docSlug: "agent-template-prompt-coach",
+    roadmap: []
+  },
+  {
+    name: "Request for Proposal Assistant",
+    summary: "Generates tailored first drafts for RFP responses from existing proposal content.",
+    details: "Uses organization proposal libraries and templates to speed RFP response drafting while staying aligned to standards and customer needs.",
+    docSlug: "agent-template-rfp-assistant",
+    roadmap: []
+  },
+  {
+    name: "Quiz Tutor",
+    summary: "Creates quiz-style tutoring experiences for learning and practice.",
+    details: "Helps learners reinforce concepts with questions, feedback, and guided review.",
+    docSlug: "agent-template-quiz-tutor",
+    roadmap: []
+  },
+  {
+    name: "Scrum Assistant",
+    summary: "Supports agile ceremonies, backlog discussion, and team status updates.",
+    details: "Helps scrum teams prepare standups, retrospectives, sprint reviews, and project follow-through.",
+    docSlug: "agent-template-scrum-assistant",
+    roadmap: []
+  },
+  {
+    name: "SME Finder",
+    summary: "Helps users identify subject-matter experts for a topic or project.",
+    details: "Guides people toward likely experts, relevant teams, and knowledge owners based on available organizational context.",
+    docSlug: "agent-template-sme-finder",
+    roadmap: []
+  },
+  {
+    name: "Status Update Agent",
+    summary: "Drafts structured status updates from work context and project inputs.",
+    details: "Helps users communicate progress, blockers, risks, next steps, and decisions in a repeatable format.",
+    docSlug: "agent-template-status-update-agent",
+    roadmap: []
+  },
+  {
+    name: "Text Translator Assistant",
+    summary: "Translates and adapts text for target languages and audiences.",
+    details: "Supports translation workflows where users need clear, context-aware text adaptation.",
+    docSlug: "agent-template-text-translator",
+    roadmap: []
+  },
+  {
+    name: "Writing Coach",
+    summary: "Improves clarity, tone, structure, and effectiveness of written content.",
+    details: "Provides writing feedback and rewrite guidance so emails, reports, and other content are easier to read and better aligned to intent.",
+    docSlug: "agent-template-writing-coach",
     roadmap: []
   }
 ];
+
+for (const template of templates) {
+  template.type = "Agent Builder template";
+  template.docs = [{
+    title: `${template.name} template`,
+    url: `https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/${template.docSlug}`
+  }];
+}
 
 const roadmapNotes = [
   {
