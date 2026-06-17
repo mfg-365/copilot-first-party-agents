@@ -1,0 +1,70 @@
+name: Refresh monitor
+
+on:
+  schedule:
+    - cron: "23 12 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Build site
+        run: npm run build
+
+      - name: Monitor public sources
+        id: monitor
+        run: |
+          set +e
+          npm run monitor | tee monitor-output.txt
+          echo "exit_code=$?" >> "$GITHUB_OUTPUT"
+          set -e
+
+      - name: Commit source monitor state
+        run: |
+          if git diff --quiet -- data/source-state.json; then
+            echo "No source-state changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/source-state.json
+          git commit -m "Update source monitor state"
+          git push
+
+      - name: Open refresh issue
+        if: contains(steps.monitor.outputs.exit_code, '0')
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const output = fs.readFileSync('monitor-output.txt', 'utf8');
+            if (!output.includes('Source changes detected:')) {
+              return;
+            }
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: 'Review Microsoft 365 Copilot agent source updates',
+              body: [
+                'The scheduled source monitor detected metadata changes in tracked Microsoft Learn, Support, blog, or roadmap sources.',
+                '',
+                '```text',
+                output.slice(0, 6000),
+                '```',
+                '',
+                'Review the source changes, update `data/site-data.js` as needed, then rebuild the site.'
+              ].join('\n')
+            });

@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | Microsoft 365 Copilot First-Party Agents</title>
+  <meta name="description" content="Out-of-box agents, Agent Builder, templates, documentation, blogs, and roadmap signals.">
+  <script>
+    (() => {
+      const param = new URLSearchParams(window.location.search).get("scoutTheme");
+      const theme =
+        param || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="shell">
+    <header class="hero">
+      <div class="wrap">
+        <nav class="nav" aria-label="Main navigation">
+          <a class="brand" href="./index.html"><span class="logo">A</span><span>Microsoft 365 Copilot First-Party Agents</span></a>
+          <div class="nav-links">
+            <a href="./index.html#agents">Agents</a>
+            <a href="./templates/index.html">Agent Builder templates</a>
+            <a href="./sources.html">Sources & refresh</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Microsoft 365 Copilot</p>
+        <h1>Microsoft 365 Copilot First-Party Agents</h1>
+        <p class="lede">Out-of-box agents, Agent Builder, templates, documentation, blogs, and roadmap signals.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#agents">Explore agents</a>
+          <a class="button" href="templates/index.html">View templates</a>
+        </div>
+      </div>
+      <aside class="orb-card" aria-label="Site summary">
+        <div class="orb" aria-hidden="true"></div>
+        <div class="stats">
+          <div class="stat"><strong>25</strong><span>First-party agents</span></div><div class="stat"><strong>7</strong><span>Template pages</span></div><div class="stat"><strong>Scheduled</strong><span>Source monitoring</span></div>
+        </div>
+      </aside>
+    </div>
+  </section>
+  <main>
+    <div class="wrap">
+      <section class="section">
+        <div class="callout">
+          <strong>About this site</strong>
+          <p>Agent inventory seeded from the provided Microsoft 365 Copilot first-party agents slide, availability last updated June 2, 2026. Public links were researched on June 16, 2026. Roadmap coverage is intentionally conservative because agent-specific roadmap details are not always published.</p>
+        </div>
+      </section>
+      <section class="section" id="agents">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Inventory</p>
+            <h2>First-party Copilot agents</h2>
+          </div>
+        </div>
+        <div class="cards"><article class="card">
+    <div class="pills"><span class="pill status">Generally Available</span></div>
+    <h3><a href="agents/researcher/index.html">Researcher</a></h3>
+    <p>Performs in-depth research and content synthesis across web and work data, returning cited, structured findings for complex questions.</p>
+    <div class="pills"><span class="pill ">Copilot Chat</span></div>
+  </article><article class="card">
+    <div class="pills"><span class="pill status">Generally Available</span></div>
+    <h3><a href="agents/analyst/index.html">Analyst</a></h3>
+    <p>Turns complex datasets into insights, forecasts, and visualizations.</p>
+    <div class="pills"><span class="pill ">Copilot Chat</span></div>
+  </article><article class="card">
+    <div class="pills"><span class="pill status">Public Preview</span></div>
+    <h3><a href="agents/facilitator/index.html">Facilitator</a></h3>
+    <p>Takes notes, captures decisions, tracks action items, and supports Teams meeting moderation.</p>
+    <div class="pills"><span class="pill ">Teams</span></div>
+  </article><article class="card">
+    <div class="pills"><span class="pill status">Public Preview</span></div>
+    <h3><a href="agents/interpreter/index.html">Interpreter</a></h3>
+    <p>Provides real-time speech interpretation for Teams meetings across supported languages.</p>
+    <div class="pills"><span class="pill ">Teams</span></div>
+  </article><article class="card">
+    <div class="pills"><span class="pill status">Frontier</span></div>
+    <h3><a href="agents/sales-agent/index.html">Sales Agent</a></h3>
+    <p>Prepares sellers with CRM-driven insights and can assist with lead research, outreach, and sales follow-up.</p>
+    <div class="pills"><span class="pill ">Copilot Chat</span><span class="pill ">Outlook</span><span class="pill ">Teams</span><span class="pill ">Microsoft 365</span></div>
+  </article><article class="card">
+    <div class="pills"><span class="pill status">Frontier</span></div>
+    <h3><a href="agents/finance-agent/index.html">Finance Agent</a></h3>
+    <p>Surfaces finance insights and reduces manual work in finance workflows.</p>
+    <div class="pills"><span class="pill ">Excel</span><span class="pill ">Outlook</span></div>
+  </article><article class="card">
+    <div class="pills"><span class="pill status">Generally Available</span></div>
+    <h3><a href="agents/word-agent/index.html">Word Agent</a></h3>
+    <p>Drafts and refines long-form Word documents from Copilot Chat prompts.</p>
+    <div class="pills"><span class="pill ">Copilot Chat</span></div>
+  </article><article class="card">
+    <div class="pills"><span class="pill status">Generally Available</span></div>
+    <h3><a href="agents/excel-agent/index.html">Excel Agent</a></h3>
+    <p>Builds and analyzes spreadsheets from prompts.</p>
+    <div class="pills"><span class="pill ">Copilot Chat</span></div>
+  </article><article class="card">
+    <div class="pills"><span class="pill status">Generally Available</span></div>
+    <h3><a href="agents/powerpoint-agent/index.html">PowerPoint Agent</a></h3>
+    <p>Turns prompts into complete presentations.</p>
+    <div class="pills"><span class="pill ">Copilot Chat</span></div>
+  </article><article class="card">
+    <div class="pills"><span class="pill status">Public Preview</span></div>
+    <h3><a href="agents/surveys-agent/index.html">Surveys Agent</a></h3>
+    <p>Creates, sends, and analyzes surveys.</p>
+    <div class="pills"><span class="pill ">Copilot Chat</span><span class="pill ">Forms</span></div>
+  </article><article class="card">
+    <div class="pills"><span class="pill status">Public Preview</span></div>
+    <h3><a href="agents/m365-admin-agent/index.html">M365 Admin Agent</a></h3>
+    <p>Simplifies Microsoft 365 administration through Copilot and admin center experiences.</p>
+    <div class="pills"><span class="pill ">Copilot Chat</span><span class="pill ">Admin Center</span></div>
+  </article><article class="card">
+    <div class="pills"><span class="pill status">Frontier</span></div>
+    <h3><a href="agents/writing-coach/index.html">Writing Coach</a></h3>
+    <p>Improves writing clarity, tone, grammar, and effectiveness.</p>
+    <div class="pills"><span class="pill ">Copilot Chat</span></div>
+  </article><article class="card">
+    <div class="pills"><span class="pill status">Frontier</span></div>
+    <h3><a href="agents/learning-coach/index.html">Learning Coach</a></h3>
+    <p>Breaks complex topics into clear summaries and supports learning plans.</p>
+    <div class="pills"><span class="pill ">Copilot Chat</span></div>
+  </article><article class="card">
+    <div class="pills"><span class="pill status">Frontier</span></div>
+    <h3><a href="agents/career-coach/index.html">Career Coach</a></h3>
+    <p>Provides personalized career growth guidance.</p>
+    <div class="pills"><span class="pill ">Copilot Chat</span></div>
+  </article><article class="card">
+    <div class="pills"><span class="pill status">Frontier</span></div>
+    <h3><a href="agents/prompt-coach/index.html">Prompt Coach</a></h3>
+    <p>Helps users craft clearer and more effective prompts.</p>
+    <div class="pills"><span class="pill ">Copilot Chat</span></div>
+  </article><article class="card">
+    <div class="pills"><span class="pill status">Frontier</span></div>
+    <h3><a href="agents/ideas-coach/index.html">Ideas Coach</a></h3>
+    <p>Helps brainstorm, expand, and refine ideas.</p>
+    <div class="pills"><span class="pill ">Copilot Chat</span></div>
+  </article><article class="card">
+    <div class="pills"><span class="pill status">Public Preview</span></div>
+    <h3><a href="agents/employee-self-service/index.html">Employee Self-Service</a></h3>
+    <p>Provides a one-stop HR and IT self-service experience.</p>
+    <div class="pills"><span class="pill ">Teams</span><span class="pill ">Copilot Chat</span></div>
+  </article><article class="card">
+    <div class="pills"><span class="pill status">Generally Available</span></div>
+    <h3><a href="agents/workflows-agent/index.html">Workflows Agent</a></h3>
+    <p>Automates emails, reminders, approvals, updates, and other routine work.</p>
+    <div class="pills"><span class="pill ">Copilot Chat</span></div>
+  </article><article class="card">
+    <div class="pills"><span class="pill status">Frontier</span></div>
+    <h3><a href="agents/workforce-insights-agent/index.html">Workforce Insights Agent</a></h3>
+    <p>Provides real-time organizational views for leaders.</p>
+    <div class="pills"><span class="pill ">Copilot Chat</span></div>
+  </article><article class="card">
+    <div class="pills"><span class="pill status">Generally Available</span></div>
+    <h3><a href="agents/planner-agent/index.html">Planner Agent</a></h3>
+    <p>Manages tasks and builds plans in chat.</p>
+    <div class="pills"><span class="pill ">Copilot Chat</span></div>
+  </article><article class="card">
+    <div class="pills"><span class="pill status">Frontier</span></div>
+    <h3><a href="agents/legal-agent/index.html">Legal Agent</a></h3>
+    <p>Reviews and redlines contracts in Word.</p>
+    <div class="pills"><span class="pill ">Word</span></div>
+  </article><article class="card">
+    <div class="pills"><span class="pill status">Public Preview</span></div>
+    <h3><a href="agents/frontline-agent/index.html">Frontline Agent</a></h3>
+    <p>Provides task help and information for frontline workers.</p>
+    <div class="pills"><span class="pill ">Copilot Chat</span><span class="pill ">Teams</span></div>
+  </article><article class="card">
+    <div class="pills"><span class="pill status">Generally Available</span></div>
+    <h3><a href="agents/agents-in-channels/index.html">Agents in Channels</a></h3>
+    <p>Summarizes and acts within Teams channels.</p>
+    <div class="pills"><span class="pill ">Teams</span></div>
+  </article><article class="card">
+    <div class="pills"><span class="pill status">Generally Available</span></div>
+    <h3><a href="agents/agents-in-communities/index.html">Agents in Communities</a></h3>
+    <p>Shares knowledge across Viva Engage communities.</p>
+    <div class="pills"><span class="pill ">Viva Engage</span><span class="pill ">Copilot Chat</span></div>
+  </article><article class="card">
+    <div class="pills"><span class="pill status">Frontier</span></div>
+    <h3><a href="agents/learning-agent/index.html">Learning Agent</a></h3>
+    <p>Provides personalized Copilot tips and learning paths.</p>
+    <div class="pills"><span class="pill ">Copilot Chat</span></div>
+  </article></div>
+      </section>
+      <section class="section">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Agent Builder</p>
+            <h2>Templates and tuned-agent starters</h2>
+          </div>
+          <a class="button" href="templates/index.html">Open templates</a>
+        </div>
+        <div class="cards"><article class="card">
+    <div class="pills"><span class="pill status">No-code Agent Builder</span></div>
+    <h3><a href="./templates/agent-builder-templates/index.html">Agent Builder templates</a></h3>
+    <p>Templates in Agent Builder give users a fast starting point for declarative agents in Microsoft 365 Copilot.</p>
+  </article><article class="card">
+    <div class="pills"><span class="pill status">Copilot Tuning template</span></div>
+    <h3><a href="./templates/document-writing/index.html">Document Writing</a></h3>
+    <p>Creates long-form documents using organizational examples and style patterns.</p>
+  </article><article class="card">
+    <div class="pills"><span class="pill status">Copilot Tuning template</span></div>
+    <h3><a href="./templates/document-validation/index.html">Document Validation</a></h3>
+    <p>Checks documents against requirements, source material, or expected structure.</p>
+  </article></div>
+      </section>
+    </div>
+  </main>
+    <footer class="footer">
+      <div class="wrap">
+        <p>Last updated June 16, 2026. Agent inventory seeded from the provided Microsoft 365 Copilot first-party agents slide, availability last updated June 2, 2026. Public links were researched on June 16, 2026.</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

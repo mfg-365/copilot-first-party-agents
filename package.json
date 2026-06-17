@@ -1,0 +1,13 @@
+{
+  "name": "copilot-first-party-agents",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static GitHub Pages site covering Microsoft 365 Copilot first-party agents and Agent Builder templates.",
+  "scripts": {
+    "build": "node scripts/build-site.js",
+    "monitor": "node scripts/monitor-sources.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
