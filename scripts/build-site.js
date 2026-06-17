@@ -64,6 +64,7 @@ function iconMarkup(item, prefix = ".") {
 
 function layout({ title, description, body, depth = 0 }) {
   const prefix = relPath(depth);
+  const templatesActive = title.includes("Agent Builder") || title.includes("Template");
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -84,13 +85,14 @@ function layout({ title, description, body, depth = 0 }) {
 </head>
 <body>
   <div class="shell">
+    <div class="ribbon" aria-hidden="true"></div>
     <header class="hero">
       <div class="wrap">
         <nav class="nav" aria-label="Main navigation">
-          <a class="brand" href="${prefix}/index.html"><span class="logo">A</span><span>${escapeHtml(site.title)}</span></a>
+          <a class="brand" href="${prefix}/index.html"><span class="logo">A</span><span class="brand-text"><strong>Microsoft 365 Copilot</strong><span>First-party agents & templates</span></span></a>
           <div class="nav-links">
-            <a href="${prefix}/index.html#agents">Agents</a>
-            <a href="${prefix}/templates/index.html">Agent Builder templates</a>
+            <a class="${templatesActive ? "" : "active"}" href="${prefix}/index.html#agents">Agents</a>
+            <a class="${templatesActive ? "active" : ""}" href="${prefix}/templates/index.html">Agent Builder templates</a>
           </div>
         </nav>
       </div>
@@ -138,7 +140,7 @@ function homePage() {
 
   const body = `<section class="home-hero">
     <div class="wrap hero-grid">
-      <div>
+      <div class="hero-copy">
         <p class="eyebrow">Microsoft 365 Copilot</p>
         <h1>${escapeHtml(site.title)}</h1>
         <p class="lede">${escapeHtml(site.subtitle)}</p>
@@ -255,10 +257,28 @@ function agentPage(agent) {
 function templatesIndex() {
   const body = `<main>
     <div class="wrap">
-      <section class="section">
-        <p class="eyebrow">Microsoft 365 Copilot</p>
-        <h1>Agent Builder templates</h1>
-        <p class="lede">${escapeHtml(site.agentBuilder.summary)}</p>
+      <section class="detail-hero template-hero">
+        <div class="detail-hero-main">
+          <div class="page-title">
+            <span class="template-mini-mark" aria-hidden="true">AB</span>
+            <div>
+              <p class="eyebrow">Microsoft 365 Copilot</p>
+              <h1>Agent Builder templates</h1>
+            </div>
+          </div>
+          <p class="lede">${escapeHtml(site.agentBuilder.summary)}</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#template-catalog">Browse templates</a>
+            <a class="button" href="${escapeHtml(site.agentBuilder.docs[0].url)}">Agent Builder docs</a>
+          </div>
+        </div>
+        <div class="detail-hero-side compact-side">
+          <div class="detail-stats">
+            <div class="detail-stat"><span>Templates</span><strong>${site.templates.length}</strong></div>
+            <div class="detail-stat"><span>Build flow</span><strong>4 steps</strong></div>
+            <div class="detail-stat"><span>Source</span><strong>Learn</strong></div>
+          </div>
+        </div>
       </section>
       <section class="section">
         <div class="template-process">
@@ -277,7 +297,7 @@ function templatesIndex() {
         <h2>Supporting documentation</h2>
         ${linkList(site.agentBuilder.docs)}
       </section>
-      <section class="section">
+      <section class="section" id="template-catalog">
         <h2>Template catalog</h2>
         <div class="cards">${site.templates.map((template) => cardForTemplate(template, 1)).join("")}</div>
       </section>
