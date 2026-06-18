@@ -110,25 +110,25 @@ function layout({ title, description, body, depth = 0 }) {
 
 function cardForAgent(agent) {
   const slug = slugify(agent.name);
-  return `<article class="card agent-card">
+  return `<a class="card agent-card card-link" href="agents/${slug}/index.html">
     <div class="card-top">
       ${iconMarkup(agent)}
       <span class="pill status">${escapeHtml(agent.status)}</span>
     </div>
-    <h3><a href="agents/${slug}/index.html">${escapeHtml(agent.name)}</a></h3>
+    <h3>${escapeHtml(agent.name)}</h3>
     <p>${escapeHtml(agent.summary)}</p>
     ${pills(agent.surfaces)}
-  </article>`;
+  </a>`;
 }
 
 function cardForTemplate(template, depth = 0) {
   const prefix = relPath(depth);
   const slug = slugify(template.name);
-  return `<article class="card">
+  return `<a class="card card-link" href="${prefix}/templates/${slug}/index.html">
     <div class="pills"><span class="pill status">${escapeHtml(template.type)}</span></div>
-    <h3><a href="${prefix}/templates/${slug}/index.html">${escapeHtml(template.name)}</a></h3>
+    <h3>${escapeHtml(template.name)}</h3>
     <p>${escapeHtml(template.summary)}</p>
-  </article>`;
+  </a>`;
 }
 
 function homePage() {
