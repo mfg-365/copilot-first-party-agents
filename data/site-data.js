@@ -51,7 +51,7 @@ const agents = [
   },
   {
     name: "Facilitator",
-    status: "Public Preview",
+    status: "Generally Available",
     surfaces: ["Teams"],
     summary: "Takes notes, captures decisions, tracks action items, and supports Teams meeting moderation.",
     details: "Facilitator joins Teams meetings as a shared agent. It produces collaborative notes, timelines, Q&A, and follow-up artifacts visible to participants.",
@@ -62,11 +62,11 @@ const agents = [
     ],
     blogs: [commonBlogs.humanAgentTeams],
     roadmap: [],
-    caveat: "Some public docs describe core Facilitator capabilities as generally available while other capabilities remain in preview; the slide inventory marks the agent Public Preview."
+    caveat: "Some public docs describe core Facilitator capabilities as generally available while other capabilities remain in preview."
   },
   {
     name: "Interpreter",
-    status: "Public Preview",
+    status: "Generally Available",
     surfaces: ["Teams"],
     summary: "Provides real-time speech interpretation for Teams meetings across supported languages.",
     details: "Interpreter lets meeting participants listen in a selected language using real-time speech-to-speech translation, including voice simulation options governed by Teams policy.",
@@ -79,7 +79,7 @@ const agents = [
   },
   {
     name: "Sales Agent",
-    status: "Frontier",
+    status: "Generally Available",
     surfaces: ["Copilot Chat", "Outlook", "Teams", "Microsoft 365"],
     summary: "Prepares sellers with CRM-driven insights and can assist with lead research, outreach, and sales follow-up.",
     details: "Sales Agent connects sales workflows with CRM, Microsoft 365, and web context to help sellers prepare for customer work and pursue pipeline.",
@@ -92,7 +92,7 @@ const agents = [
   },
   {
     name: "Finance Agent",
-    status: "Frontier",
+    status: "Generally Available",
     surfaces: ["Excel", "Outlook"],
     summary: "Surfaces finance insights and reduces manual work in finance workflows.",
     details: "The slide inventory places Finance Agent in Excel and Outlook for finance analysis and workflow assistance.",
@@ -142,7 +142,7 @@ const agents = [
   },
   {
     name: "Surveys Agent",
-    status: "Public Preview",
+    status: "Generally Available",
     surfaces: ["Copilot Chat", "Forms"],
     summary: "Creates, sends, and analyzes surveys.",
     details: "The slide inventory positions Surveys Agent across Copilot Chat and Forms for survey creation and analysis.",
@@ -153,7 +153,7 @@ const agents = [
   },
   {
     name: "M365 Admin Agent",
-    status: "Public Preview",
+    status: "Generally Available",
     surfaces: ["Copilot Chat", "Admin Center"],
     summary: "Simplifies Microsoft 365 administration through Copilot and admin center experiences.",
     details: "M365 Admin Agent is referenced in Microsoft 365 admin documentation as part of the built-in agent management surface.",
@@ -167,7 +167,7 @@ const agents = [
   },
   {
     name: "Writing Coach",
-    status: "Frontier",
+    status: "Generally Available",
     surfaces: ["Copilot Chat"],
     summary: "Improves writing clarity, tone, grammar, and effectiveness.",
     details: "Writing Coach appears in the Microsoft-built agents list and provides AI-powered feedback for writing quality.",
@@ -177,7 +177,7 @@ const agents = [
   },
   {
     name: "Learning Coach",
-    status: "Frontier",
+    status: "Generally Available",
     surfaces: ["Copilot Chat"],
     summary: "Breaks complex topics into clear summaries and supports learning plans.",
     details: "Learning Coach is a general learning assistant listed in Microsoft-built agents, distinct from the Viva Learning-integrated Learning Agent.",
@@ -187,7 +187,7 @@ const agents = [
   },
   {
     name: "Career Coach",
-    status: "Frontier",
+    status: "Generally Available",
     surfaces: ["Copilot Chat"],
     summary: "Provides personalized career growth guidance.",
     details: "Career Coach helps with career planning, skill development, and goal setting.",
@@ -197,7 +197,7 @@ const agents = [
   },
   {
     name: "Prompt Coach",
-    status: "Frontier",
+    status: "Generally Available",
     surfaces: ["Copilot Chat"],
     summary: "Helps users craft clearer and more effective prompts.",
     details: "Prompt Coach teaches prompt structure and refinement for better Copilot and agent responses.",
@@ -207,7 +207,7 @@ const agents = [
   },
   {
     name: "Ideas Coach",
-    status: "Frontier",
+    status: "Generally Available",
     surfaces: ["Copilot Chat"],
     summary: "Helps brainstorm, expand, and refine ideas.",
     details: "Ideas Coach, listed as Idea Coach in Microsoft Support, provides structured creative guidance from concept to actionable plan.",
@@ -217,7 +217,7 @@ const agents = [
   },
   {
     name: "Employee Self-Service",
-    status: "Public Preview",
+    status: "Generally Available",
     surfaces: ["Teams", "Copilot Chat"],
     summary: "Provides a one-stop HR and IT self-service experience.",
     details: "Employee Self-Service is built on Copilot Studio and includes starter HR and IT scenarios for benefits, policies, account help, device setup, and escalation.",
@@ -227,7 +227,7 @@ const agents = [
   },
   {
     name: "Workflows Agent",
-    status: "Generally Available",
+    status: "Frontier",
     surfaces: ["Copilot Chat"],
     summary: "Automates emails, reminders, approvals, updates, and other routine work.",
     details: "Workflows Agent is powered by Power Platform and Power Automate. It enables natural-language automation from Copilot Chat.",
@@ -283,7 +283,7 @@ const agents = [
   },
   {
     name: "Agents in Channels",
-    status: "Generally Available",
+    status: "Public Preview",
     surfaces: ["Teams"],
     summary: "Summarizes and acts within Teams channels.",
     details: "Channel agents use channel context to answer questions, flag deadlines, draft updates, and assist with channel-specific project knowledge.",
@@ -293,22 +293,22 @@ const agents = [
     ],
     blogs: [commonBlogs.humanAgentTeams],
     roadmap: [],
-    caveat: "Some docs still carry preview language; the provided slide marks this generally available as of June 2, 2026."
+    caveat: "Some docs still carry preview language."
   },
   {
     name: "Agents in Communities",
-    status: "Generally Available",
+    status: "Public Preview",
     surfaces: ["Viva Engage", "Copilot Chat"],
     summary: "Shares knowledge across Viva Engage communities.",
     details: "Community agents answer community questions from prior conversations and connected SharePoint knowledge, with admin review options.",
     docs: [{ title: "Agents in Viva Engage communities", url: "https://learn.microsoft.com/en-us/viva/engage/ai-technology-with-viva-engage/agents-community-network-deployment-config" }],
     blogs: [commonBlogs.humanAgentTeams],
     roadmap: [],
-    caveat: "The current Learn page still includes preview wording; the provided slide marks this generally available as of June 2, 2026."
+    caveat: "The current Learn page still includes preview wording."
   },
   {
     name: "Learning Agent",
-    status: "Frontier",
+    status: "Generally Available",
     surfaces: ["Copilot Chat"],
     summary: "Provides personalized Copilot tips and learning paths.",
     details: "Learning Agent is a Viva Learning-integrated agent for Microsoft 365 Copilot tips and organizational learning paths. It is distinct from Learning Coach.",
@@ -327,16 +327,24 @@ for (const agent of agents) {
   agent.icon = `assets/agent-icons/${slug}.png`;
 }
 
-Object.assign(agents.find((agent) => agent.name === "M365 Admin Agent"), {
-  iconText: "A",
+Object.assign(agents.find((agent) => agent.name === "Facilitator"), {
+  iconText: "T",
   icon: ""
 });
-Object.assign(agents.find((agent) => agent.name === "Writing Coach"), {
-  iconText: "Wc",
+Object.assign(agents.find((agent) => agent.name === "Interpreter"), {
+  iconText: "T",
   icon: ""
 });
-Object.assign(agents.find((agent) => agent.name === "Workforce Insights Agent"), {
-  iconText: "WI",
+Object.assign(agents.find((agent) => agent.name === "Employee Self-Service"), {
+  iconText: "ES",
+  icon: ""
+});
+Object.assign(agents.find((agent) => agent.name === "Agents in Channels"), {
+  iconText: "T",
+  icon: ""
+});
+Object.assign(agents.find((agent) => agent.name === "Agents in Communities"), {
+  iconText: "Co",
   icon: ""
 });
 
