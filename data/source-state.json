@@ -5,7 +5,7 @@
     "status": 200,
     "finalUrl": "https://learn.microsoft.com/en-us/microsoft-365/copilot/researcher-agent",
     "updated": "2026-02-19",
-    "checkedAt": "2026-09-28T19:43:04.604Z"
+    "checkedAt": "2026-10-12T21:19:02.331Z"
   },
   "https://learn.microsoft.com/en-us/microsoft-365/copilot/faq-researcher": {
     "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/faq-researcher",
@@ -13,7 +13,7 @@
     "status": 200,
     "finalUrl": "https://learn.microsoft.com/en-us/microsoft-365/copilot/faq-researcher",
     "updated": "2025-10-31",
-    "checkedAt": "2026-09-28T19:43:04.813Z"
+    "checkedAt": "2026-10-12T21:19:02.449Z"
   },
   "https://support.microsoft.com/en-US/Microsoft-365-Copilot/get-started-with-researcher-in-microsoft-365-copilot": {
     "url": "https://support.microsoft.com/en-US/Microsoft-365-Copilot/get-started-with-researcher-in-microsoft-365-copilot",
@@ -21,7 +21,7 @@
     "status": 200,
     "finalUrl": "https://support.microsoft.com/en-us/microsoft-365-copilot/get-started-with-researcher-in-microsoft-365-copilot",
     "updated": "2026-09-09",
-    "checkedAt": "2026-09-28T19:43:05.079Z"
+    "checkedAt": "2026-10-12T21:19:02.745Z"
   },
   "https://www.microsoft.com/en-us/microsoft-365/blog/2025/03/25/introducing-researcher-and-analyst-in-microsoft-365-copilot/": {
     "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2025/03/25/introducing-researcher-and-analyst-in-microsoft-365-copilot/",
@@ -29,7 +29,7 @@
     "status": 200,
     "finalUrl": "https://www.microsoft.com/en-us/copilot/blog/2025/03/25/introducing-researcher-and-analyst-in-microsoft-365-copilot/",
     "updated": "2025-03-26",
-    "checkedAt": "2026-09-28T19:43:10.114Z"
+    "checkedAt": "2026-10-12T21:19:07.643Z"
   },
   "https://www.microsoft.com/en-us/microsoft-365/blog/2025/06/02/researcher-and-analyst-are-now-generally-available-in-microsoft-365-copilot/": {
     "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2025/06/02/researcher-and-analyst-are-now-generally-available-in-microsoft-365-copilot/",
@@ -37,7 +37,7 @@
     "status": 200,
     "finalUrl": "https://www.microsoft.com/en-us/copilot/blog/2025/06/02/researcher-and-analyst-are-now-generally-available-in-microsoft-365-copilot/",
     "updated": "2025-06-02",
-    "checkedAt": "2026-09-28T19:43:16.092Z"
+    "checkedAt": "2026-10-12T21:19:12.458Z"
   },
   "https://support.microsoft.com/en-US/Microsoft-365-Copilot/get-started-with-analyst-in-microsoft-365-copilot": {
     "url": "https://support.microsoft.com/en-US/Microsoft-365-Copilot/get-started-with-analyst-in-microsoft-365-copilot",
@@ -45,15 +45,15 @@
     "status": 200,
     "finalUrl": "https://support.microsoft.com/en-us/microsoft-365-copilot/get-started-with-analyst-in-microsoft-365-copilot",
     "updated": "2026-08-18",
-    "checkedAt": "2026-09-28T19:43:16.259Z"
+    "checkedAt": "2026-10-12T21:19:12.838Z"
   },
   "https://support.microsoft.com/en-US/Microsoft-365-Copilot/agents-built-by-microsoft": {
     "url": "https://support.microsoft.com/en-US/Microsoft-365-Copilot/agents-built-by-microsoft",
     "title": "Agents built by Microsoft | Microsoft Support",
     "status": 200,
     "finalUrl": "https://support.microsoft.com/en-us/microsoft-365-copilot/agents-built-by-microsoft",
-    "updated": "2026-08-18",
-    "checkedAt": "2026-09-28T19:43:16.371Z"
+    "updated": "2026-10-01",
+    "checkedAt": "2026-10-12T21:19:13.174Z"
   },
   "https://learn.microsoft.com/en-us/microsoftteams/facilitator-teams": {
     "url": "https://learn.microsoft.com/en-us/microsoftteams/facilitator-teams",
@@ -61,7 +61,7 @@
     "status": 200,
     "finalUrl": "https://learn.microsoft.com/en-us/microsoftteams/facilitator-teams",
     "updated": "2026-08-13",
-    "checkedAt": "2026-09-28T19:43:16.493Z"
+    "checkedAt": "2026-10-12T21:19:13.430Z"
   },
   "https://learn.microsoft.com/en-us/microsoftteams/rooms/facilitator-teams-rooms": {
     "url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/facilitator-teams-rooms",
@@ -69,7 +69,7 @@
     "status": 200,
     "finalUrl": "https://learn.microsoft.com/en-us/microsoftteams/rooms/facilitator-teams-rooms",
     "updated": "2025-03-18",
-    "checkedAt": "2026-09-28T19:43:16.644Z"
+    "checkedAt": "2026-10-12T21:19:13.536Z"
   },
   "https://learn.microsoft.com/en-us/purview/ai-teams-facilitator": {
     "url": "https://learn.microsoft.com/en-us/purview/ai-teams-facilitator",
@@ -77,7 +77,7 @@
     "status": 200,
     "finalUrl": "https://learn.microsoft.com/en-us/purview/ai-teams-facilitator",
     "updated": "2026-05-01",
-    "checkedAt": "2026-09-28T19:43:17.058Z"
+    "checkedAt": "2026-10-12T21:19:13.635Z"
   },
   "https://www.microsoft.com/en-us/microsoft-365/blog/2025/09/18/microsoft-365-copilot-enabling-human-agent-teams/": {
     "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2025/09/18/microsoft-365-copilot-enabling-human-agent-teams/",
@@ -85,7 +85,7 @@
     "status": 200,
     "finalUrl": "https://www.microsoft.com/en-us/copilot/blog/2025/09/18/microsoft-365-copilot-enabling-human-agent-teams/",
     "updated": "2025-09-18",
-    "checkedAt": "2026-09-28T19:43:21.140Z"
+    "checkedAt": "2026-10-12T21:19:19.396Z"
   },
   "https://learn.microsoft.com/en-us/microsoftteams/interpreter-agent-teams": {
     "url": "https://learn.microsoft.com/en-us/microsoftteams/interpreter-agent-teams",
@@ -93,7 +93,7 @@
     "status": 200,
     "finalUrl": "https://learn.microsoft.com/en-us/microsoftteams/interpreter-agent-teams",
     "updated": "2026-09-21",
-    "checkedAt": "2026-09-28T19:43:21.262Z"
+    "checkedAt": "2026-10-12T21:19:21.479Z"
   },
   "https://support.microsoft.com/office/interpreter-in-microsoft-teams-meetings-c7efe2bb-535d-42ab-a5c4-d2d91619b46d": {
     "url": "https://support.microsoft.com/office/interpreter-in-microsoft-teams-meetings-c7efe2bb-535d-42ab-a5c4-d2d91619b46d",
@@ -101,7 +101,7 @@
     "status": 200,
     "finalUrl": "https://support.microsoft.com/en-us/teams/copilot/interpreter-in-microsoft-teams-meetings-and-calls",
     "updated": "2026-09-24",
-    "checkedAt": "2026-09-28T19:43:21.351Z"
+    "checkedAt": "2026-10-12T21:19:21.707Z"
   },
   "https://www.microsoft.com/en-us/microsoft-365/blog/2025/03/05/new-sales-agents-accessible-in-microsoft-365-copilot-help-teams-close-more-deals-faster/": {
     "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2025/03/05/new-sales-agents-accessible-in-microsoft-365-copilot-help-teams-close-more-deals-faster/",
@@ -109,7 +109,7 @@
     "status": 200,
     "finalUrl": "https://www.microsoft.com/en-us/copilot/blog/2025/03/05/new-sales-agents-accessible-in-microsoft-365-copilot-help-teams-close-more-deals-faster/",
     "updated": "2025-03-05",
-    "checkedAt": "2026-09-28T19:43:24.531Z"
+    "checkedAt": "2026-10-12T21:19:24.618Z"
   },
   "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/powering-frontier-transformation-with-copilot-and-agents/": {
     "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/powering-frontier-transformation-with-copilot-and-agents/",
@@ -117,7 +117,7 @@
     "status": 200,
     "finalUrl": "https://www.microsoft.com/en-us/copilot/blog/2026/03/09/powering-frontier-transformation-with-copilot-and-agents/",
     "updated": "2026-03-09",
-    "checkedAt": "2026-09-28T19:43:28.386Z"
+    "checkedAt": "2026-10-12T21:19:29.410Z"
   },
   "https://learn.microsoft.com/en-us/microsoft-365/copilot/wordexcelppt-agents": {
     "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/wordexcelppt-agents",
@@ -125,7 +125,7 @@
     "status": 200,
     "finalUrl": "https://learn.microsoft.com/en-us/microsoft-365/copilot/wordexcelppt-agents",
     "updated": "2026-03-26",
-    "checkedAt": "2026-09-28T19:43:28.568Z"
+    "checkedAt": "2026-10-12T21:19:29.575Z"
   },
   "https://learn.microsoft.com/en-us/microsoft-365/copilot/faq-wordexcelppt-agents": {
     "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/faq-wordexcelppt-agents",
@@ -133,7 +133,7 @@
     "status": 200,
     "finalUrl": "https://learn.microsoft.com/en-us/microsoft-365/copilot/faq-wordexcelppt-agents",
     "updated": "2025-11-18",
-    "checkedAt": "2026-09-28T19:43:28.887Z"
+    "checkedAt": "2026-10-12T21:19:29.648Z"
   },
   "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps?view=o365-worldwide": {
     "url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps?view=o365-worldwide",
@@ -141,7 +141,7 @@
     "status": 200,
     "finalUrl": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps?view=o365-worldwide",
     "updated": "2026-05-18",
-    "checkedAt": "2026-09-28T19:43:29.022Z"
+    "checkedAt": "2026-10-12T21:19:29.758Z"
   },
   "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/agent-settings?view=o365-worldwide": {
     "url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/agent-settings?view=o365-worldwide",
@@ -149,7 +149,7 @@
     "status": 200,
     "finalUrl": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/agent-settings?view=o365-worldwide",
     "updated": "2026-09-03",
-    "checkedAt": "2026-09-28T19:43:29.119Z"
+    "checkedAt": "2026-10-12T21:19:29.813Z"
   },
   "https://learn.microsoft.com/en-us/microsoft-365/copilot/employee-self-service/overview": {
     "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/employee-self-service/overview",
@@ -157,7 +157,7 @@
     "status": 200,
     "finalUrl": "https://learn.microsoft.com/en-us/microsoft-365/copilot/employee-self-service/overview",
     "updated": "2026-03-16",
-    "checkedAt": "2026-09-28T19:43:29.273Z"
+    "checkedAt": "2026-10-12T21:19:29.897Z"
   },
   "https://learn.microsoft.com/en-us/microsoft-365/copilot/workflows-environment-workflows-agents": {
     "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/workflows-environment-workflows-agents",
@@ -165,7 +165,7 @@
     "status": 200,
     "finalUrl": "https://learn.microsoft.com/en-us/microsoft-365/copilot/workflows-environment-workflows-agents",
     "updated": "2026-09-01",
-    "checkedAt": "2026-09-28T19:43:29.408Z"
+    "checkedAt": "2026-10-12T21:19:29.938Z"
   },
   "https://learn.microsoft.com/en-us/microsoft-365/copilot/responsible-ai/flow-builder-responsible-ai-faq": {
     "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/responsible-ai/flow-builder-responsible-ai-faq",
@@ -173,7 +173,7 @@
     "status": 200,
     "finalUrl": "https://learn.microsoft.com/en-us/microsoft-365/copilot/responsible-ai/flow-builder-responsible-ai-faq",
     "updated": "2025-09-19",
-    "checkedAt": "2026-09-28T19:43:29.565Z"
+    "checkedAt": "2026-10-12T21:19:29.976Z"
   },
   "https://learn.microsoft.com/en-us/microsoft-365/copilot/workforce-insights-agent": {
     "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/workforce-insights-agent",
@@ -181,7 +181,7 @@
     "status": 200,
     "finalUrl": "https://learn.microsoft.com/en-us/microsoft-365/copilot/workforce-insights-agent",
     "updated": "2026-06-24",
-    "checkedAt": "2026-09-28T19:43:29.663Z"
+    "checkedAt": "2026-10-12T21:19:30.029Z"
   },
   "https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/02/announcing-the-new-work-iq-apis/": {
     "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/02/announcing-the-new-work-iq-apis/",
@@ -189,7 +189,7 @@
     "status": 200,
     "finalUrl": "https://www.microsoft.com/en-us/copilot/blog/2026/06/02/announcing-the-new-work-iq-apis/",
     "updated": "2026-06-02",
-    "checkedAt": "2026-09-28T19:43:33.507Z"
+    "checkedAt": "2026-10-12T21:19:33.408Z"
   },
   "https://www.microsoft.com/en-us/microsoft-365/blog/2025/05/19/introducing-microsoft-365-copilot-tuning-multi-agent-orchestration-and-more-from-microsoft-build-2025/": {
     "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2025/05/19/introducing-microsoft-365-copilot-tuning-multi-agent-orchestration-and-more-from-microsoft-build-2025/",
@@ -197,7 +197,7 @@
     "status": 200,
     "finalUrl": "https://www.microsoft.com/en-us/copilot/blog/2025/05/19/introducing-microsoft-365-copilot-tuning-multi-agent-orchestration-and-more-from-microsoft-build-2025/",
     "updated": "2025-05-19",
-    "checkedAt": "2026-09-28T19:43:36.658Z"
+    "checkedAt": "2026-10-12T21:19:39.254Z"
   },
   "https://learn.microsoft.com/en-us/microsoftteams/set-up-channel-agent-teams": {
     "url": "https://learn.microsoft.com/en-us/microsoftteams/set-up-channel-agent-teams",
@@ -205,7 +205,7 @@
     "status": 200,
     "finalUrl": "https://learn.microsoft.com/en-us/microsoftteams/set-up-channel-agent-teams",
     "updated": "2025-09-17",
-    "checkedAt": "2026-09-28T19:43:36.813Z"
+    "checkedAt": "2026-10-12T21:19:39.416Z"
   },
   "https://learn.microsoft.com/en-us/purview/ai-teams-channel-agent": {
     "url": "https://learn.microsoft.com/en-us/purview/ai-teams-channel-agent",
@@ -213,15 +213,15 @@
     "status": 200,
     "finalUrl": "https://learn.microsoft.com/en-us/purview/ai-teams-channel-agent",
     "updated": "2026-05-01",
-    "checkedAt": "2026-09-28T19:43:36.914Z"
+    "checkedAt": "2026-10-12T21:19:39.528Z"
   },
   "https://learn.microsoft.com/en-us/viva/engage/ai-technology-with-viva-engage/agents-community-network-deployment-config": {
     "url": "https://learn.microsoft.com/en-us/viva/engage/ai-technology-with-viva-engage/agents-community-network-deployment-config",
-    "title": "Set up and manage agents in Viva Engage communities | Microsoft Learn",
+    "title": "Set up and manage Community Agents in Viva Engage | Microsoft Learn",
     "status": 200,
-    "finalUrl": "https://learn.microsoft.com/en-us/viva/engage/ai-technology-with-viva-engage/agents-community-network-deployment-config",
-    "updated": "2026-08-28",
-    "checkedAt": "2026-09-28T19:43:37.059Z"
+    "finalUrl": "https://learn.microsoft.com/en-us/viva/engage/community-agent",
+    "updated": "2026-10-08",
+    "checkedAt": "2026-10-12T21:19:39.848Z"
   },
   "https://learn.microsoft.com/en-us/viva/learning/learning-agent-overview-deployment-steps": {
     "url": "https://learn.microsoft.com/en-us/viva/learning/learning-agent-overview-deployment-steps",
@@ -229,7 +229,7 @@
     "status": 200,
     "finalUrl": "https://learn.microsoft.com/en-us/viva/learning/learning-agent-overview-deployment-steps",
     "updated": "2025-11-27",
-    "checkedAt": "2026-09-28T19:43:37.302Z"
+    "checkedAt": "2026-10-12T21:19:39.897Z"
   },
   "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-ai-learning-advisor": {
     "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-ai-learning-advisor",
@@ -237,7 +237,7 @@
     "status": 200,
     "finalUrl": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-ai-learning-advisor",
     "updated": "2026-05-18",
-    "checkedAt": "2026-09-28T19:43:37.404Z"
+    "checkedAt": "2026-10-12T21:19:40.001Z"
   },
   "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-career-coach": {
     "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-career-coach",
@@ -245,7 +245,7 @@
     "status": 200,
     "finalUrl": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-career-coach",
     "updated": "2025-09-11",
-    "checkedAt": "2026-09-28T19:43:37.547Z"
+    "checkedAt": "2026-10-12T21:19:40.129Z"
   },
   "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-corporate-communications": {
     "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-corporate-communications",
@@ -253,7 +253,7 @@
     "status": 200,
     "finalUrl": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-corporate-communications",
     "updated": "2025-12-01",
-    "checkedAt": "2026-09-28T19:43:37.648Z"
+    "checkedAt": "2026-10-12T21:19:40.212Z"
   },
   "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-customer-insight": {
     "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-customer-insight",
@@ -261,7 +261,7 @@
     "status": 200,
     "finalUrl": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-customer-insight",
     "updated": "2025-09-11",
-    "checkedAt": "2026-09-28T19:43:37.738Z"
+    "checkedAt": "2026-10-12T21:19:40.283Z"
   },
   "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-executive-briefing": {
     "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-executive-briefing",
@@ -269,7 +269,7 @@
     "status": 200,
     "finalUrl": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-executive-briefing",
     "updated": "2026-05-06",
-    "checkedAt": "2026-09-28T19:43:37.844Z"
+    "checkedAt": "2026-10-12T21:19:40.356Z"
   },
   "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-idea-coach": {
     "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-idea-coach",
@@ -277,7 +277,7 @@
     "status": 200,
     "finalUrl": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-idea-coach",
     "updated": "2025-09-11",
-    "checkedAt": "2026-09-28T19:43:37.935Z"
+    "checkedAt": "2026-10-12T21:19:40.577Z"
   },
   "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-interview-questions": {
     "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-interview-questions",
@@ -285,7 +285,7 @@
     "status": 200,
     "finalUrl": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-interview-questions",
     "updated": "2025-09-11",
-    "checkedAt": "2026-09-28T19:43:38.050Z"
+    "checkedAt": "2026-10-12T21:19:40.769Z"
   },
   "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-learning-coach": {
     "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-learning-coach",
@@ -293,7 +293,7 @@
     "status": 200,
     "finalUrl": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-learning-coach",
     "updated": "2025-09-11",
-    "checkedAt": "2026-09-28T19:43:38.133Z"
+    "checkedAt": "2026-10-12T21:19:40.980Z"
   },
   "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-meeting-coach": {
     "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-meeting-coach",
@@ -301,7 +301,7 @@
     "status": 200,
     "finalUrl": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-meeting-coach",
     "updated": "2025-09-11",
-    "checkedAt": "2026-09-28T19:43:38.241Z"
+    "checkedAt": "2026-10-12T21:19:41.114Z"
   },
   "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-my-company-policy": {
     "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-my-company-policy",
@@ -309,15 +309,15 @@
     "status": 200,
     "finalUrl": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-my-company-policy",
     "updated": "2026-05-06",
-    "checkedAt": "2026-09-28T19:43:38.372Z"
+    "checkedAt": "2026-10-12T21:19:41.192Z"
   },
   "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-personal-news-digest": {
     "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-personal-news-digest",
     "title": "Use the Personal News Digest template to build an agent | Microsoft Learn",
     "status": 200,
     "finalUrl": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-personal-news-digest",
-    "updated": "2026-05-06",
-    "checkedAt": "2026-09-28T19:43:38.485Z"
+    "updated": "2026-07-06",
+    "checkedAt": "2026-10-12T21:19:41.269Z"
   },
   "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-plan-my-day": {
     "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-plan-my-day",
@@ -325,7 +325,7 @@
     "status": 200,
     "finalUrl": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-plan-my-day",
     "updated": "2026-05-06",
-    "checkedAt": "2026-09-28T19:43:38.625Z"
+    "checkedAt": "2026-10-12T21:19:41.379Z"
   },
   "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-project-delta-digest": {
     "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-project-delta-digest",
@@ -333,7 +333,7 @@
     "status": 200,
     "finalUrl": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-project-delta-digest",
     "updated": "2026-05-06",
-    "checkedAt": "2026-09-28T19:43:38.737Z"
+    "checkedAt": "2026-10-12T21:19:41.430Z"
   },
   "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-prompt-coach": {
     "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-prompt-coach",
@@ -341,7 +341,7 @@
     "status": 200,
     "finalUrl": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-prompt-coach",
     "updated": "2025-09-11",
-    "checkedAt": "2026-09-28T19:43:38.813Z"
+    "checkedAt": "2026-10-12T21:19:41.683Z"
   },
   "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-rfp-assistant": {
     "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-rfp-assistant",
@@ -349,7 +349,7 @@
     "status": 200,
     "finalUrl": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-rfp-assistant",
     "updated": "2025-12-01",
-    "checkedAt": "2026-09-28T19:43:39.012Z"
+    "checkedAt": "2026-10-12T21:19:41.785Z"
   },
   "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-quiz-tutor": {
     "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-quiz-tutor",
@@ -357,7 +357,7 @@
     "status": 200,
     "finalUrl": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-quiz-tutor",
     "updated": "2025-09-11",
-    "checkedAt": "2026-09-28T19:43:39.103Z"
+    "checkedAt": "2026-10-12T21:19:41.897Z"
   },
   "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-scrum-assistant": {
     "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-scrum-assistant",
@@ -365,7 +365,7 @@
     "status": 200,
     "finalUrl": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-scrum-assistant",
     "updated": "2025-09-11",
-    "checkedAt": "2026-09-28T19:43:39.194Z"
+    "checkedAt": "2026-10-12T21:19:41.967Z"
   },
   "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-sme-finder": {
     "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-sme-finder",
@@ -373,7 +373,7 @@
     "status": 200,
     "finalUrl": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-sme-finder",
     "updated": "2026-05-06",
-    "checkedAt": "2026-09-28T19:43:39.284Z"
+    "checkedAt": "2026-10-12T21:19:42.025Z"
   },
   "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-status-update-agent": {
     "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-status-update-agent",
@@ -381,7 +381,7 @@
     "status": 200,
     "finalUrl": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-status-update-agent",
     "updated": "2026-05-06",
-    "checkedAt": "2026-09-28T19:43:39.866Z"
+    "checkedAt": "2026-10-12T21:19:42.078Z"
   },
   "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-text-translator": {
     "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-text-translator",
@@ -389,7 +389,7 @@
     "status": 200,
     "finalUrl": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-text-translator",
     "updated": "2025-12-01",
-    "checkedAt": "2026-09-28T19:43:39.960Z"
+    "checkedAt": "2026-10-12T21:19:42.178Z"
   },
   "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-writing-coach": {
     "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-writing-coach",
@@ -397,39 +397,39 @@
     "status": 200,
     "finalUrl": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-writing-coach",
     "updated": "2025-09-11",
-    "checkedAt": "2026-09-28T19:43:40.095Z"
+    "checkedAt": "2026-10-12T21:19:42.248Z"
   },
   "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-builder": {
     "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-builder",
-    "title": "Agent Builder in Microsoft 365 Copilot | Microsoft Learn",
+    "title": "Agent Builder overview | Microsoft Learn",
     "status": 200,
     "finalUrl": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-builder",
-    "updated": "2026-07-23",
-    "checkedAt": "2026-09-28T19:43:40.322Z"
+    "updated": "2026-09-30",
+    "checkedAt": "2026-10-12T21:19:42.299Z"
   },
   "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-builder-build-agents": {
     "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-builder-build-agents",
-    "title": "Build Agents with Agent Builder in Microsoft 365 Copilot | Microsoft Learn",
+    "title": "Build agents in Agent Builder | Microsoft Learn",
     "status": 200,
     "finalUrl": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-builder-build-agents",
-    "updated": "2026-08-19",
-    "checkedAt": "2026-09-28T19:43:40.429Z"
+    "updated": "2026-09-30",
+    "checkedAt": "2026-10-12T21:19:42.337Z"
   },
   "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-builder-share-manage-agents": {
     "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-builder-share-manage-agents",
-    "title": "Share and manage agents built with Microsoft 365 Copilot | Microsoft Learn",
+    "title": "Share and manage agents built in Agent Builder | Microsoft Learn",
     "status": 200,
     "finalUrl": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-builder-share-manage-agents",
-    "updated": "2026-07-21",
-    "checkedAt": "2026-09-28T19:43:40.612Z"
+    "updated": "2026-09-30",
+    "checkedAt": "2026-10-12T21:19:42.405Z"
   },
   "https://support.microsoft.com/en-US/Microsoft-365-Copilot/build-your-own-agent-with-microsoft-365-copilot": {
     "url": "https://support.microsoft.com/en-US/Microsoft-365-Copilot/build-your-own-agent-with-microsoft-365-copilot",
     "title": "Build your own agent with Microsoft Copilot | Microsoft Support",
     "status": 200,
     "finalUrl": "https://support.microsoft.com/en-us/microsoft-365-copilot/build-your-own-agent-with-microsoft-365-copilot",
-    "updated": "2026-09-03",
-    "checkedAt": "2026-09-28T19:43:40.829Z"
+    "updated": "2026-10-01",
+    "checkedAt": "2026-10-12T21:19:42.584Z"
   },
   "https://www.microsoft.com/en-us/microsoft-365/roadmap": {
     "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap",
@@ -437,6 +437,6 @@
     "status": 200,
     "finalUrl": "https://www.microsoft.com/en-us/microsoft-365/roadmap",
     "updated": "",
-    "checkedAt": "2026-09-28T19:43:42.147Z"
+    "checkedAt": "2026-10-12T21:19:43.819Z"
   }
 }
